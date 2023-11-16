@@ -1,7 +1,20 @@
-<div *ngIf="message;">
-  <h1>{{ message.notification.title }}</h1>
-  <h2>{{ message.notification.body }}</h2>
+<div class="container m-5">
+  <div *ngIf="!message;">
+    No Message Arrived
+  </div>
+  <div class="toast-container position-fixed row justify-content-center align-items-center">
+    <ngb-toast *ngIf="message" [autohide]="true" (hidden)="hiddenHandler()" class="custom-toast">
+      <ng-template ngbToastHeader>
+        <div class="me-auto">
+          <img height="30" width="30" src="{{message?.notification?.image}}" class="rounded me-2" alt="...">
+          <strong class="mx-1">{{message?.notification?.title}}</strong>
+        </div>
+      </ng-template>
+      {{ message?.notification?.body }}
+      <hr>
+      <p>data:</p>
+      {{message?.data | json}}
+    </ngb-toast>
+  </div>
 </div>
-<div *ngIf="!message;">
-  No Message Arrived
-</div>
+
