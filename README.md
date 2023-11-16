@@ -1,27 +1,30 @@
-# FcmWebClient
+# Angular Web Client for Firebase Cloud Messaging (FCM)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+🌐 This Angular web client allows users to interact with the Firebase Cloud Messaging (FCM) server for sending push notifications.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Before getting started, ensure that you have the following prerequisites installed:
 
-## Code scaffolding
+- Node.js and npm (Node Package Manager)
+- Angular CLI (`npm install -g @angular/cli`)
+- Access to the Firebase Cloud Messaging (FCM) server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+1. Clone this repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   git clone https://github.com/MdShohanurRahman/fcm-client.git
+   cd fcm-client
+   
+2. Install dependencies:
+   ```
+   npm install
+   
+3. Configure the FCM server connection:
+   *  Open the src/environments/environment.ts file
+   
+4. Run the application:
+    ```
+    ng serve
